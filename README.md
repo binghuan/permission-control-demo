@@ -2,7 +2,10 @@
 permission-control-demo
 ================================================
 
-I created this "Demo Permissions Control" to showcase the implications and considerations when shifting permission control from the server-side to the app side.  
+I created this "Demo Permission Control" to show you how permissions are returned from the server to the application, and the application uses them for ui controls.
+
+// 給我簡短一點的 description
+
 
 ## Table of Contents
 
