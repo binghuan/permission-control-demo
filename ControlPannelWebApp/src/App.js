@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Table, TableBody, TableCell, TableHead, TableRow, Switch, Button } from '@mui/material';
-import axios from 'axios'; // 引入axios
+import axios from 'axios'; // Importing axios for HTTP requests
 import './App.css';
 
 const initialPermissions = {
@@ -44,9 +44,9 @@ function App() {
   const [permissions, setPermissions] = useState(initialPermissions);
   const [isSidePanelOpen, setSidePanelOpen] = useState(false);
 
-  // 使用useEffect來監聽permissions的變動
+  // Use useEffect to listen for changes in permissions
   useEffect(() => {
-    // 發送資料到伺服器的函數
+    // Function to send data to the server
     const sendDataToServer = async () => {
       try {
         await axios.post('http://localhost:8080/permissions', permissions);
@@ -88,78 +88,77 @@ function App() {
     });
   };
 
-
-
   return (
     <div className="App">
 
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell>UI Controls</TableCell>
-            <TableCell >Key</TableCell>
-            <TableCell colSpan={2}>EditMode</TableCell>
-            <TableCell colSpan={2}>ViewMode</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell></TableCell>
-            <TableCell></TableCell>
-            <TableCell>Read</TableCell>
-            <TableCell>Write</TableCell>
-            <TableCell>Read</TableCell>
-            <TableCell>Write</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {Object.keys(initialPermissions.editMode).map(key => (
-            <TableRow key={key}>
-
-              <TableCell><img src={`/images/${key}.png`} alt="icon" width="300" /></TableCell>
-
-
-              <TableCell className="key-cell">{key}</TableCell>
-
-              <TableCell>
-                <Switch
-                  disabled={permissions.editMode[key] === 'write'}
-                  checked={permissions.editMode[key].includes('read')}
-                  onChange={() => handleToggleChange(key, 'editMode', 'read')}
-                />
-              </TableCell>
-              <TableCell>
-                <Switch
-                  disabled={permissions.editMode[key] === '-'}
-                  checked={permissions.editMode[key].includes('write')}
-                  onChange={() => handleToggleChange(key, 'editMode', 'write')}
-                />
-              </TableCell>
-              <TableCell>
-                <Switch
-                  disabled={permissions.viewMode[key] === 'write'}
-                  checked={permissions.viewMode[key].includes('read')}
-                  onChange={() => handleToggleChange(key, 'viewMode', 'read')}
-                />
-              </TableCell>
-              <TableCell>
-                <Switch
-                  disabled={permissions.viewMode[key] === '-'}
-                  checked={permissions.viewMode[key].includes('write')}
-                  onChange={() => handleToggleChange(key, 'viewMode', 'write')}
-                />
-              </TableCell>
+      <div className="table-container">
+        <Table>  {/* Add right margin to the table */}
+          <TableHead>
+            <TableRow>
+              <TableCell>UI Controls</TableCell>
+              <TableCell>Key</TableCell>
+              <TableCell style={{ width: '60px' }}>EditMode</TableCell>
+              <TableCell style={{ width: '60px' }}>EditMode</TableCell>
+              <TableCell style={{ width: '60px' }}>ViewMode</TableCell>
+              <TableCell style={{ width: '60px' }}>ViewMode</TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+            <TableRow>
+              <TableCell></TableCell>
+              <TableCell></TableCell>
+              <TableCell style={{ width: '60px' }}>Read</TableCell>
+              <TableCell style={{ width: '60px' }}>Write</TableCell>
+              <TableCell style={{ width: '60px' }}>Read</TableCell>
+              <TableCell style={{ width: '60px' }}>Write</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {Object.keys(initialPermissions.editMode).map(key => (
+              <TableRow key={key}>
+                <TableCell><img src={`/images/${key}.png`} alt="icon" width="300" /></TableCell>
+                <TableCell className="key-cell">{key}</TableCell>
+                <TableCell style={{ width: '60px' }}>
+                  <Switch
+                    disabled={permissions.editMode[key] === 'write'}
+                    checked={permissions.editMode[key].includes('read')}
+                    onChange={() => handleToggleChange(key, 'editMode', 'read')}
+                  />
+                </TableCell>
+                <TableCell style={{ width: '60px' }}>
+                  <Switch
+                    disabled={permissions.editMode[key] === '-'}
+                    checked={permissions.editMode[key].includes('write')}
+                    onChange={() => handleToggleChange(key, 'editMode', 'write')}
+                  />
+                </TableCell>
+                <TableCell style={{ width: '60px' }}>
+                  <Switch
+                    disabled={permissions.viewMode[key] === 'write'}
+                    checked={permissions.viewMode[key].includes('read')}
+                    onChange={() => handleToggleChange(key, 'viewMode', 'read')}
+                  />
+                </TableCell>
+                <TableCell style={{ width: '60px' }}>
+                  <Switch
+                    disabled={permissions.viewMode[key] === '-'}
+                    checked={permissions.viewMode[key].includes('write')}
+                    onChange={() => handleToggleChange(key, 'viewMode', 'write')}
+                  />
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
+
 
       <div
         className={isSidePanelOpen ? 'side-panel open' : 'side-panel'}
-        onClick={() => setSidePanelOpen(true)} // 直接在這裡添加onClick事件
+        onClick={() => setSidePanelOpen(true)} // Add onClick event directly here
       >
         <Button
           style={{ position: 'absolute', top: '50%', left: -30, transform: 'translateY(-50%)', zIndex: 1 }}
           onClick={(e) => {
-            e.stopPropagation(); // 防止事件冒泡到上面的div
+            e.stopPropagation(); // Prevent event from bubbling up to the parent div
             setSidePanelOpen(true);
           }}
         >
@@ -168,7 +167,7 @@ function App() {
         <Button
           style={{ position: 'absolute', top: 10, right: 10, zIndex: 1 }}
           onClick={(e) => {
-            e.stopPropagation(); // 防止事件冒泡到上面的div
+            e.stopPropagation(); // Prevent event from bubbling up to the parent div
             setSidePanelOpen(false);
           }}
         >

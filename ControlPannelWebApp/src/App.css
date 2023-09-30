@@ -3,12 +3,18 @@
 }
 
 .App pre {
-  cursor: text;  /* Set the cursor to text selection */
+  cursor: text;
+  /* Set the cursor to text selection */
   text-align: left;
   white-space: pre-wrap;
   word-wrap: break-word;
   max-width: 100%;
   overflow-x: auto;
+}
+
+.table-container {
+  margin-right: 40px;
+  /* Adjust this value based on the width of your side panel */
 }
 
 .side-panel {
@@ -22,7 +28,8 @@
   transition: right 0.3s;
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  user-select: text;  /* Allow text selection */
+  user-select: text;
+  /* Allow text selection */
 }
 
 
