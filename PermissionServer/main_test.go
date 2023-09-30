@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-const serverURL = "http://localhost:8080/v1/calendar/default/events/eventId?type=difft"
+const serverURL = "http://localhost:8080/v1/calendar/default/events/eventId?type=google"
 
 func TestGetCalendarEventDetails(t *testing.T) {
 	// 发起GET请求
