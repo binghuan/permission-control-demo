@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		070FBA402AC755940063B758 /* iPermTakerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FBA3F2AC755940063B758 /* iPermTakerApp.swift */; };
+		070FBA422AC755940063B758 /* MeetingEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FBA412AC755940063B758 /* MeetingEditorView.swift */; };
+		070FBA442AC755940063B758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070FBA432AC755940063B758 /* Assets.xcassets */; };
+		070FBA482AC755940063B758 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070FBA472AC755940063B758 /* Preview Assets.xcassets */; };
+		070FBA522AC755950063B758 /* iPermTakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FBA512AC755950063B758 /* iPermTakerTests.swift */; };
+		070FBA5C2AC755950063B758 /* iPermTakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FBA5B2AC755950063B758 /* iPermTakerUITests.swift */; };
+		070FBA5E2AC755950063B758 /* iPermTakerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FBA5D2AC755950063B758 /* iPermTakerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		070FBA4E2AC755950063B758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 070FBA342AC755930063B758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 070FBA3B2AC755940063B758;
+			remoteInfo = iPermTaker;
+		};
+		070FBA582AC755950063B758 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 070FBA342AC755930063B758 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 070FBA3B2AC755940063B758;
+			remoteInfo = iPermTaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		070FBA3C2AC755940063B758 /* iPermTaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPermTaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		070FBA3F2AC755940063B758 /* iPermTakerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPermTakerApp.swift; sourceTree = "<group>"; };
+		070FBA412AC755940063B758 /* MeetingEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingEditorView.swift; sourceTree = "<group>"; };
+		070FBA432AC755940063B758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		070FBA452AC755940063B758 /* iPermTaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iPermTaker.entitlements; sourceTree = "<group>"; };
+		070FBA472AC755940063B758 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		070FBA4D2AC755950063B758 /* iPermTakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPermTakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		070FBA512AC755950063B758 /* iPermTakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPermTakerTests.swift; sourceTree = "<group>"; };
+		070FBA572AC755950063B758 /* iPermTakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPermTakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		070FBA5B2AC755950063B758 /* iPermTakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPermTakerUITests.swift; sourceTree = "<group>"; };
+		070FBA5D2AC755950063B758 /* iPermTakerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPermTakerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		070FBA392AC755940063B758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		070FBA4A2AC755950063B758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		070FBA542AC755950063B758 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		070FBA332AC755930063B758 = {
+			isa = PBXGroup;
+			children = (
+				070FBA3E2AC755940063B758 /* iPermTaker */,
+				070FBA502AC755950063B758 /* iPermTakerTests */,
+				070FBA5A2AC755950063B758 /* iPermTakerUITests */,
+				070FBA3D2AC755940063B758 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		070FBA3D2AC755940063B758 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				070FBA3C2AC755940063B758 /* iPermTaker.app */,
+				070FBA4D2AC755950063B758 /* iPermTakerTests.xctest */,
+				070FBA572AC755950063B758 /* iPermTakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		070FBA3E2AC755940063B758 /* iPermTaker */ = {
+			isa = PBXGroup;
+			children = (
+				070FBA3F2AC755940063B758 /* iPermTakerApp.swift */,
+				070FBA412AC755940063B758 /* MeetingEditorView.swift */,
+				070FBA432AC755940063B758 /* Assets.xcassets */,
+				070FBA452AC755940063B758 /* iPermTaker.entitlements */,
+				070FBA462AC755940063B758 /* Preview Content */,
+			);
+			path = iPermTaker;
+			sourceTree = "<group>";
+		};
+		070FBA462AC755940063B758 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				070FBA472AC755940063B758 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		070FBA502AC755950063B758 /* iPermTakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				070FBA512AC755950063B758 /* iPermTakerTests.swift */,
+			);
+			path = iPermTakerTests;
+			sourceTree = "<group>";
+		};
+		070FBA5A2AC755950063B758 /* iPermTakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				070FBA5B2AC755950063B758 /* iPermTakerUITests.swift */,
+				070FBA5D2AC755950063B758 /* iPermTakerUITestsLaunchTests.swift */,
+			);
+			path = iPermTakerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		070FBA3B2AC755940063B758 /* iPermTaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 070FBA612AC755950063B758 /* Build configuration list for PBXNativeTarget "iPermTaker" */;
+			buildPhases = (
+				070FBA382AC755940063B758 /* Sources */,
+				070FBA392AC755940063B758 /* Frameworks */,
+				070FBA3A2AC755940063B758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPermTaker;
+			productName = iPermTaker;
+			productReference = 070FBA3C2AC755940063B758 /* iPermTaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		070FBA4C2AC755950063B758 /* iPermTakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 070FBA642AC755950063B758 /* Build configuration list for PBXNativeTarget "iPermTakerTests" */;
+			buildPhases = (
+				070FBA492AC755950063B758 /* Sources */,
+				070FBA4A2AC755950063B758 /* Frameworks */,
+				070FBA4B2AC755950063B758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				070FBA4F2AC755950063B758 /* PBXTargetDependency */,
+			);
+			name = iPermTakerTests;
+			productName = iPermTakerTests;
+			productReference = 070FBA4D2AC755950063B758 /* iPermTakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		070FBA562AC755950063B758 /* iPermTakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 070FBA672AC755950063B758 /* Build configuration list for PBXNativeTarget "iPermTakerUITests" */;
+			buildPhases = (
+				070FBA532AC755950063B758 /* Sources */,
+				070FBA542AC755950063B758 /* Frameworks */,
+				070FBA552AC755950063B758 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				070FBA592AC755950063B758 /* PBXTargetDependency */,
+			);
+			name = iPermTakerUITests;
+			productName = iPermTakerUITests;
+			productReference = 070FBA572AC755950063B758 /* iPermTakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		070FBA342AC755930063B758 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					070FBA3B2AC755940063B758 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					070FBA4C2AC755950063B758 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 070FBA3B2AC755940063B758;
+					};
+					070FBA562AC755950063B758 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 070FBA3B2AC755940063B758;
+					};
+				};
+			};
+			buildConfigurationList = 070FBA372AC755930063B758 /* Build configuration list for PBXProject "iPermTaker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 070FBA332AC755930063B758;
+			productRefGroup = 070FBA3D2AC755940063B758 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				070FBA3B2AC755940063B758 /* iPermTaker */,
+				070FBA4C2AC755950063B758 /* iPermTakerTests */,
+				070FBA562AC755950063B758 /* iPermTakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		070FBA3A2AC755940063B758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070FBA482AC755940063B758 /* Preview Assets.xcassets in Resources */,
+				070FBA442AC755940063B758 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		070FBA4B2AC755950063B758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		070FBA552AC755950063B758 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		070FBA382AC755940063B758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070FBA422AC755940063B758 /* MeetingEditorView.swift in Sources */,
+				070FBA402AC755940063B758 /* iPermTakerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		070FBA492AC755950063B758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070FBA522AC755950063B758 /* iPermTakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		070FBA532AC755950063B758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				070FBA5E2AC755950063B758 /* iPermTakerUITestsLaunchTests.swift in Sources */,
+				070FBA5C2AC755950063B758 /* iPermTakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		070FBA4F2AC755950063B758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 070FBA3B2AC755940063B758 /* iPermTaker */;
+			targetProxy = 070FBA4E2AC755950063B758 /* PBXContainerItemProxy */;
+		};
+		070FBA592AC755950063B758 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 070FBA3B2AC755940063B758 /* iPermTaker */;
+			targetProxy = 070FBA582AC755950063B758 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		070FBA5F2AC755950063B758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		070FBA602AC755950063B758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		070FBA622AC755950063B758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = iPermTaker/iPermTaker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iPermTaker/Preview Content\"";
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bh.iPermTaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		070FBA632AC755950063B758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = iPermTaker/iPermTaker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iPermTaker/Preview Content\"";
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bh.iPermTaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		070FBA652AC755950063B758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bh.iPermTakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPermTaker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iPermTaker";
+			};
+			name = Debug;
+		};
+		070FBA662AC755950063B758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bh.iPermTakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPermTaker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iPermTaker";
+			};
+			name = Release;
+		};
+		070FBA682AC755950063B758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bh.iPermTakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iPermTaker;
+			};
+			name = Debug;
+		};
+		070FBA692AC755950063B758 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bh.iPermTakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iPermTaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		070FBA372AC755930063B758 /* Build configuration list for PBXProject "iPermTaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070FBA5F2AC755950063B758 /* Debug */,
+				070FBA602AC755950063B758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		070FBA612AC755950063B758 /* Build configuration list for PBXNativeTarget "iPermTaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070FBA622AC755950063B758 /* Debug */,
+				070FBA632AC755950063B758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		070FBA642AC755950063B758 /* Build configuration list for PBXNativeTarget "iPermTakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070FBA652AC755950063B758 /* Debug */,
+				070FBA662AC755950063B758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		070FBA672AC755950063B758 /* Build configuration list for PBXNativeTarget "iPermTakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070FBA682AC755950063B758 /* Debug */,
+				070FBA692AC755950063B758 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 070FBA342AC755930063B758 /* Project object */;
+}
