@@ -18,6 +18,7 @@ I created this "Demo Permission Control" to show you how permissions are returne
   - [How to start the Server](#how-to-start-the-server)
   - [how to start the Mobile App](#how-to-start-the-mobile-app)
   - [Demo](#demo)
+  - [How to test the server](#how-to-test-the-server)
   - [Risks of Permission Control on Mobile Devices](#risks-of-permission-control-on-mobile-devices)
 
 
@@ -59,6 +60,13 @@ open iPermTaker.xcodeproj
 ## Demo 
 ![](./README/demo.gif)
 
+## How to test the server
+1st, start the server  
+2nd, run following command to test the server
+```bash
+curl http://localhost:8080/v1/calendar/default/events/eventId?type=google | jq .
+```
+![](./README/test_server.png)
 
 ## Risks of Permission Control on Mobile Devices
 1. Implications of Shifting Permission Control to the App Side
