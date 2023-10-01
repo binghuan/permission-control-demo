@@ -17,6 +17,15 @@
   /* Adjust this value based on the width of your side panel */
 }
 
+.table-row-hover:hover {
+  background-color: #f5f5f5;
+  /* This is a light gray color. You can adjust this to any color you prefer. */
+}
+
+.side-panel.open {
+  cursor: default;  /* This will show the default cursor when the side panel is open */
+}
+
 .side-panel {
   position: fixed;
   top: 0;
@@ -29,6 +38,8 @@
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   user-select: text;
+  cursor: pointer;
+  /* This will show the hand icon when hovering over the element */
   /* Allow text selection */
 }
 

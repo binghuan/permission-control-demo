@@ -113,7 +113,7 @@ function App() {
           </TableHead>
           <TableBody>
             {Object.keys(initialPermissions.editMode).map(key => (
-              <TableRow key={key}>
+              <TableRow key={key} className="table-row-hover">
                 <TableCell><img src={`/images/${key}.png`} alt="icon" width="300" /></TableCell>
                 <TableCell className="key-cell">{key}</TableCell>
                 <TableCell style={{ width: '60px' }}>
