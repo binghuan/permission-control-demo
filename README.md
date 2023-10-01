@@ -4,9 +4,6 @@ permission-control-demo
 
 I created this "Demo Permission Control" to show you how permissions are returned from the server to the application, and the application uses them for ui controls.
 
-// 給我簡短一點的 description
-
-
 ## Table of Contents
 
 - [permission-control-demo](#permission-control-demo)
