@@ -95,26 +95,26 @@ function App() {
         <Table>  {/* Add right margin to the table */}
           <TableHead>
             <TableRow>
-              <TableCell>UI Controls</TableCell>
+              <TableCell align="center">UI Controls</TableCell>
               <TableCell>Key</TableCell>
-              <TableCell style={{ width: '60px' }}>EditMode</TableCell>
-              <TableCell style={{ width: '60px' }}>EditMode</TableCell>
-              <TableCell style={{ width: '60px' }}>ViewMode</TableCell>
-              <TableCell style={{ width: '60px' }}>ViewMode</TableCell>
+              <TableCell align="center" style={{ width: '60px' }}>EditMode</TableCell>
+              <TableCell align="center" style={{ width: '60px' }}>EditMode</TableCell>
+              <TableCell align="center" style={{ width: '60px' }}>ViewMode</TableCell>
+              <TableCell align="center" style={{ width: '60px' }}>ViewMode</TableCell>
             </TableRow>
             <TableRow>
-              <TableCell></TableCell>
-              <TableCell></TableCell>
-              <TableCell style={{ width: '60px' }}>Read</TableCell>
-              <TableCell style={{ width: '60px' }}>Write</TableCell>
-              <TableCell style={{ width: '60px' }}>Read</TableCell>
-              <TableCell style={{ width: '60px' }}>Write</TableCell>
+              <TableCell align="center"></TableCell>
+              <TableCell align="center"></TableCell>
+              <TableCell align="center" style={{ width: '60px' }}>Read</TableCell>
+              <TableCell align="center" style={{ width: '60px' }}>Write</TableCell>
+              <TableCell align="center" style={{ width: '60px' }}>Read</TableCell>
+              <TableCell align="center" style={{ width: '60px' }}>Write</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
             {Object.keys(initialPermissions.editMode).map(key => (
               <TableRow key={key} className="table-row-hover">
-                <TableCell><img src={`/images/${key}.png`} alt="icon" width="300" /></TableCell>
+                <TableCell ><img src={`/images/${key}.png`} alt="icon" width="300" /></TableCell>
                 <TableCell className="key-cell">{key}</TableCell>
                 <TableCell style={{ width: '60px' }}>
                   <Switch

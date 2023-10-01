@@ -1,6 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
 
 .App pre {
   cursor: text;
@@ -23,7 +27,8 @@
 }
 
 .side-panel.open {
-  cursor: default;  /* This will show the default cursor when the side panel is open */
+  cursor: default;
+  /* This will show the default cursor when the side panel is open */
 }
 
 .side-panel {
@@ -50,7 +55,7 @@
 }
 
 .key-cell {
-  max-width: 150px;
+  max-width: 300px;
   /* 設定您希望的最大寬度 */
   word-wrap: break-word;
   white-space: normal;
