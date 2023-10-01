@@ -20,6 +20,8 @@ I created this "Demo Permission Control" to show you how permissions are returne
   - [Demo](#demo)
   - [How to test the server](#how-to-test-the-server)
   - [Risks of Permission Control on Mobile Devices](#risks-of-permission-control-on-mobile-devices)
+  - [Q: How do I determine who should handle the current button permissions?](#q-how-do-i-determine-who-should-handle-the-current-button-permissions)
+    - [Answer from ChatGPT:](#answer-from-chatgpt)
 
 
 ## System Design 
@@ -69,27 +71,30 @@ curl http://localhost:8080/v1/calendar/default/events/eventId?type=google | jq .
 ![](./README/test_server.png)
 
 ## Risks of Permission Control on Mobile Devices
-1. Implications of Shifting Permission Control to the App Side
-Security Concerns  
-Server-side allows centralized permission control and verification, ensuring data integrity and security. However, implementing this on the app side means that any proficient user or hacker might modify the app's code or memory, bypassing permission controls, leading to unauthorized access or modifications.
+## Q: How do I determine who should handle the current button permissions?
+For example, The iOS device has scheduled a meeting that cannot be edited, cannot invite, and does not send messages. Both Mac and iOS devices click on the meeting boot notification to the details page without an edit button, but the Android device has an edit button and can edit the "permit" option to the chat room.
 
-2. Inconsistencies  
-Different app versions or variations among users might lead to inconsistent permission controls, potentially causing data inconsistencies or even data loss.
+### Answer from ChatGPT:
+The problem description involves the issue of inconsistent permission displays on different devices (iOS, Android, Mac). Below are suggestions on how to distinguish who should handle button permissions:
 
-3. Update Challenges  
-When there's a need to update or rectify the permission control logic, every user's app must be updated. This could cause update delays or inconsistencies in permission logic among users.
+- **Basic Principle**: Permissions should always be determined by the server side. The server knows the user, the user's role, meeting details, and related permission rules. The server should return a clear set of permissions for each meeting, specifying which actions the user can perform.
+  
+- **UI Presentation**:
+  - The APP side (whether it's iOS, Android, or Mac) should decide whether to display the edit button or other buttons based on the set of permissions returned by the server.
+  - No permission rules should be hardcoded on the client side. For example, you shouldn't write in the iOS code "if the user is this role, then display the edit button". Instead, it should be "if the server says the user can edit, then display the edit button".
+  
+- **Handling Inconsistency**:
+  - If iOS and Mac do not display the edit button, but Android does, then it may be a bug on the Android side. In this case, Android developers need to check how they handle the set of permissions returned by the server.
+  - Another possibility is that the set of permissions returned by the server to different devices is inconsistent. This could be a server-side bug.
+  
+- **Testing**: Comprehensive testing is recommended to ensure permissions are implemented correctly on all devices. Create different meeting and user scenarios, and then test the display and functionality of permissions on all devices.
+  
+- **Detailed Error Reporting**: When receiving problem reports as described, it should be as detailed as possible. For instance, the report should include:
+  - The device used and the version of the operating system.
+  - The complete set of permissions returned by the server.
+  - The actual UI seen on the device.
+  - Any other potentially relevant information, such as user roles, meeting details, etc.
+  
+- **Continuous Communication**: Front-end and back-end developers should communicate regularly to ensure they both understand the rules and logic of permissions. When there are new permission requirements or changes, all device APPs should be updated promptly.
 
-4. Performance Impact  
-Performing permission verifications on the app side might increase the app's CPU and memory usage, affecting its overall performance.
-
-5. Increased Business Logic Complexity  
-Introducing permission control logic on the app side means the app has to manage more business logic, making the code more complex and harder to maintain.
-
-6. Network Communication Implications  
-With permission control on the app side, there might be a need for more network communication to fetch the necessary data for verification, increasing network traffic and latency.
-
-7. Data Redundancy  
-To verify permissions on the app side, more data might need to be transferred from the server to the app, leading to data redundancy and higher network traffic.
-
-In Conclusion
-Although there are scenarios where client-side permission logic might make sense (e.g., reducing server load or enhancing user experience), from a security and maintainability perspective, it's generally recommended to handle permission control server-side.
+In summary, button permissions should be determined by the server and implemented consistently on all client devices. Inconsistencies across different devices are usually caused by client or server-side bugs and need to be addressed through detailed testing and communication.
