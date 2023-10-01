@@ -56,7 +56,6 @@
 
 .key-cell {
   max-width: 300px;
-  /* 設定您希望的最大寬度 */
   word-wrap: break-word;
   white-space: normal;
 }
