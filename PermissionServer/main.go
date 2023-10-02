@@ -18,7 +18,7 @@ type Permissions struct {
 // Global variable to store permission data
 var storedPermissions = Permissions{
 	EditMode: map[string]string{
-		"buttonCreate":                        "readwrite",
+		"buttonUpdate":                        "readwrite",
 		"buttonEdit":                          "-",
 		"buttonDelete":                        "-",
 		"textFieldTitle":                      "readwrite",
@@ -36,12 +36,12 @@ var storedPermissions = Permissions{
 		"checkboxReceiveNotification":         "-",
 	},
 	ViewMode: map[string]string{
-		"buttonCreate":                        "-",
+		"buttonUpdate":                        "-",
 		"buttonEdit":                          "readwrite",
 		"buttonDelete":                        "readwrite",
 		"textFieldTitle":                      "read",
 		"pickerStartDateTime":                 "read",
-		"selectorDuration":                    "read",
+		"selectorDuration":                    "-",
 		"selectorRepeat":                      "read",
 		"selectorAttendee":                    "read",
 		"textHost":                            "read",
