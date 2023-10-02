@@ -19,6 +19,7 @@ type Permissions struct {
 var storedPermissions = Permissions{
 	EditMode: map[string]string{
 		"buttonUpdate":                        "readwrite",
+		"buttonCreate":                        "-",
 		"buttonEdit":                          "-",
 		"buttonDelete":                        "-",
 		"textFieldTitle":                      "readwrite",
@@ -37,6 +38,7 @@ var storedPermissions = Permissions{
 	},
 	ViewMode: map[string]string{
 		"buttonUpdate":                        "-",
+		"buttonCreate":                        "-",
 		"buttonEdit":                          "readwrite",
 		"buttonDelete":                        "readwrite",
 		"textFieldTitle":                      "read",
