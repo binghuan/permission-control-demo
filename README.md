@@ -10,6 +10,7 @@ I created this "Demo Permission Control" to show you how permissions are returne
   - [Table of Contents](#table-of-contents)
   - [System Design](#system-design)
   - [Keys for UI Controls](#keys-for-ui-controls)
+  - [Types of Permission Control](#types-of-permission-control)
   - [Usage](#usage)
   - [How to start the Control Panel Web App](#how-to-start-the-control-panel-web-app)
   - [How to start the Server](#how-to-start-the-server)
@@ -26,6 +27,9 @@ I created this "Demo Permission Control" to show you how permissions are returne
 
 ## Keys for UI Controls 
 ![](./README/ui_controls.png)
+
+## Types of Permission Control 
+![](./README/types_of_permission_control.png)
 
 ## Usage
 ![](./README/usage.png)
