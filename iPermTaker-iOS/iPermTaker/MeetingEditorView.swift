@@ -80,7 +80,7 @@ struct MeetingEditorView: View {
                     
                     
                     
-                    if viewModel.permission(for: "buttonEdit") != "-" {
+                    if viewModel.permission(for: "buttonDelete") != "-" {
                         Button(action: {}) {
                             HStack {
                                 Text("Delete")
