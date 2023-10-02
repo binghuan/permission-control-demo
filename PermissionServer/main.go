@@ -18,9 +18,9 @@ type Permissions struct {
 // Global variable to store permission data
 var storedPermissions = Permissions{
 	EditMode: map[string]string{
-		"buttonCreate":                        "read",
-		"buttonEdit":                          "readwrite",
-		"buttonDelete":                        "readwrite",
+		"buttonCreate":                        "-",
+		"buttonEdit":                          "-",
+		"buttonDelete":                        "-",
 		"textFieldTitle":                      "readwrite",
 		"pickerStartDateTime":                 "readwrite",
 		"selectorDuration":                    "readwrite",
@@ -36,8 +36,8 @@ var storedPermissions = Permissions{
 	},
 	ViewMode: map[string]string{
 		"buttonCreate":                        "-",
-		"buttonEdit":                          "read",
-		"buttonDelete":                        "read",
+		"buttonEdit":                          "readwrite",
+		"buttonDelete":                        "readwrite",
 		"textFieldTitle":                      "read",
 		"pickerStartDateTime":                 "read",
 		"selectorDuration":                    "read",
@@ -45,11 +45,11 @@ var storedPermissions = Permissions{
 		"selectorAttendee":                    "read",
 		"editorAttachment":                    "read",
 		"textFieldDesc":                       "read",
-		"checkboxEveryoneCanModifyMeeting":    "read",
-		"checkboxEveryoneCanInviteOthers":     "read",
-		"checkboxSendInvitationToTheChatRoom": "read",
-		"toggleGoingOrNot":                    "-",
-		"checkboxReceiveNotification":         "-",
+		"checkboxEveryoneCanModifyMeeting":    "-",
+		"checkboxEveryoneCanInviteOthers":     "-",
+		"checkboxSendInvitationToTheChatRoom": "-",
+		"toggleGoingOrNot":                    "readwrite",
+		"checkboxReceiveNotification":         "readwrite",
 	},
 }
 
