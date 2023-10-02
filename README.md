@@ -50,7 +50,7 @@ go run main.go
 ``` 
 
 
-## how to start the Mobile App
+## How to start the Mobile App
 ```bash
 cd iPermTaker-iOS
 open iPermTaker.xcodeproj
