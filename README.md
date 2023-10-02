@@ -48,8 +48,6 @@ You will see this when the web application starts.
 cd PermissionServer
 go run main.go
 ``` 
-or you can just click the xcode project to open it.  
-![](./README/xcdoe_project.png)
 
 
 ## how to start the Mobile App
@@ -57,6 +55,8 @@ or you can just click the xcode project to open it.
 cd iPermTaker-iOS
 open iPermTaker.xcodeproj
 ```
+or you can just click the xcode project to open it.  
+![](./README/xcdoe_project.png)  
 ![](./README/ios_app.png)
 
 
