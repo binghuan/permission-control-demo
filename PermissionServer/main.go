@@ -18,7 +18,7 @@ type Permissions struct {
 // Global variable to store permission data
 var storedPermissions = Permissions{
 	EditMode: map[string]string{
-		"buttonCreate":                        "-",
+		"buttonCreate":                        "readwrite",
 		"buttonEdit":                          "-",
 		"buttonDelete":                        "-",
 		"textFieldTitle":                      "readwrite",
