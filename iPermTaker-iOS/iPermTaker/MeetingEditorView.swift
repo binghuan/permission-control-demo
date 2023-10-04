@@ -2,14 +2,14 @@ import SwiftUI
 
 class PermissionsViewModel: ObservableObject {
     @Published var permissions: [String: String] = [:]
+    @Published var error: Error?
     
     func permission(for key: String) -> String {
         return permissions[key] ?? "-"
     }
     
     func fetchPermissionsAsync() async {
-        // Request permissions from the server
-        guard let url = URL(string: "http://192.168.0.26:8080/permissions") else { return }
+        guard let url = URL(string: "http://192.168.0.11:8080/permissions") else { return }
         
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
@@ -17,9 +17,31 @@ class PermissionsViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.permissions = decodedPermissions["editMode"] ?? [:]
                 }
+            } else {
+                throw NSError(domain: "PermissionDecoding", code: 1, userInfo: nil)  // Add appropriate error
             }
         } catch {
-            print("Failed to fetch permissions:", error)
+            DispatchQueue.main.async {
+                self.error = error
+                // Set default permissions here
+                self.permissions = [
+                    "buttonCreate": "readwrite",
+                    "buttonEdit": "readwrite",
+                    "buttonDelete": "readwrite",
+                    "textFieldTitle": "readwrite",
+                    "pickerStartDateTime": "readwrite",
+                    "selectorDuration": "readwrite",
+                    "selectorRepeat": "readwrite",
+                    "selectorAttendee": "readwrite",
+                    "editorAttachment": "readwrite",
+                    "textFieldDesc": "readwrite",
+                    "checkboxEveryoneCanModifyMeeting": "readwrite",
+                    "checkboxEveryoneCanInviteOthers": "readwrite",
+                    "checkboxSendInvitationToTheChatRoom": "readwrite",
+                    "toggleGoingOrNot": "readwrite",
+                    "checkboxReceiveNotification": "readwrite"
+                ]
+            }
         }
     }
 }
@@ -42,6 +64,9 @@ struct MeetingEditorView: View {
     @State private var sendInvitation: Bool = false
     @State private var isGoing: Bool = false
     @State private var isReceiveNotificationOn: Bool = false
+    
+    @State private var showErrorAlert = false
+    
     
     private let durationOptions = ["15 mins", "30 mins", "1 hr", "2 hrs", "4 hrs", "8 hrs", "10 hrs", "12 hrs", "24 hrs", "48 hrs"]
     private let repeatOptions = ["Never", "Daily", "Weekly", "Monthly"]
@@ -241,9 +266,17 @@ struct MeetingEditorView: View {
         .refreshable {
             await viewModel.fetchPermissionsAsync()
         }
-        .onAppear {
-            Task {
-                await viewModel.fetchPermissionsAsync()
+        .alert(isPresented: $showErrorAlert) {
+            Alert(
+                title: Text("Error"),
+                message: Text("Failed to fetch permissions, using default permissions."),
+                dismissButton: .default(Text("OK"))
+            )
+        }
+        .task {
+            await viewModel.fetchPermissionsAsync()
+            if viewModel.error != nil {
+                showErrorAlert = true
             }
         }
     }
