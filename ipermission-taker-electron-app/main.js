@@ -16,7 +16,7 @@ function createWindow() {
   });
 
   // 打開開發者工具
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 }
 
 app.on('ready', createWindow);
