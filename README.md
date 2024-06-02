@@ -13,8 +13,9 @@ I created this "Demo Permission Control" to show you how permissions are returne
   - [Types of Permission Control](#types-of-permission-control)
   - [Usage](#usage)
   - [How to start the Control Panel Web App](#how-to-start-the-control-panel-web-app)
-  - [How to start the Server](#how-to-start-the-server)
-  - [how to start the Mobile App](#how-to-start-the-mobile-app)
+  - [How to start the server](#how-to-start-the-server)
+  - [How to start the mobile App](#how-to-start-the-mobile-app)
+  - [How to start the electron app](#how-to-start-the-electron-app)
   - [Demo](#demo)
   - [How to test the server](#how-to-test-the-server)
   - [Risks of Permission Control on Mobile Devices](#risks-of-permission-control-on-mobile-devices)
@@ -43,14 +44,14 @@ yarn start
 You will see this when the web application starts.  
 ![](./README/control_panel_web_app.png)
 
-## How to start the Server
+## How to start the server
 ```bash
 cd PermissionServer
 go run main.go
 ``` 
 
 
-## How to start the Mobile App
+## How to start the mobile App
 ```bash
 cd iPermTaker-iOS
 open iPermTaker.xcodeproj
@@ -59,6 +60,13 @@ or you can just click the xcode project to open it.
 ![](./README/xcdoe_project.png)  
 ![](./README/ios_app.png)
 
+## How to start the electron app
+```bash
+sudo npm install foreman -g 
+cd ipermission-taker-electron-app
+yarn install 
+nf start
+```
 
 ## Demo 
 ![](./README/demo.gif)
